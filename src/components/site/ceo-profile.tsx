@@ -32,7 +32,7 @@ export function CeoProfile() {
                 width={1024}
                 height={1280}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-top"
               />
               <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
                 <div className="font-display text-xl font-semibold">Sanusi Hakeem Segun</div>
