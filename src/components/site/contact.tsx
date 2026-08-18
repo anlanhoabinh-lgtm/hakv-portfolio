@@ -46,6 +46,17 @@ export function Contact() {
             />
           </div>
 
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-3 rounded-full h-13 py-3.5 px-6 text-white font-semibold shadow-[0_12px_30px_-10px_rgba(37,211,102,0.7)] hover:brightness-105 transition"
+            style={{ backgroundColor: "#25D366" }}
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Chat on WhatsApp
+          </a>
+
           <div className="mt-8 rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-elev-sm)] aspect-[16/10]">
             <iframe
               title="Honourableak Venture office location"
