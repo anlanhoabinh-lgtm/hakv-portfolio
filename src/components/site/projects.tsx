@@ -8,7 +8,7 @@ const p2 = driveMedia.project2;
 const projects = [
   {
     image: p1,
-    alt: "Modern residential building with aluminum windows and glass balconies",
+    alt: "Aluminum bay window with tempered glazing on a completed residence",
     title: "Coastal Residence — Aluminum & Glass Envelope",
     location: "Egbin, Ikorodu",
     year: "2025",
@@ -30,7 +30,7 @@ const projects = [
   },
   {
     image: p2,
-    alt: "Commercial curtain wall glass facade at golden hour",
+    alt: "Commercial development on site prior to curtain wall glazing",
     title: "Commercial Facade — Structural Curtain Wall",
     location: "Gada, Abia State",
     year: "2025",
