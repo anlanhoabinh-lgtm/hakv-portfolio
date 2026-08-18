@@ -1,9 +1,9 @@
 import { useReveal } from "@/hooks/use-reveal";
 import { CheckCircle2, MapPin, Calendar } from "lucide-react";
-import { driveMedia } from "@/lib/site-data";
+import { media } from "@/lib/media";
 
-const p1 = driveMedia.project1;
-const p2 = driveMedia.project2;
+const p1 = media.project1;
+const p2 = media.project2;
 
 const projects = [
   {

@@ -1,7 +1,7 @@
 import { ArrowRight, PlayCircle, ShieldCheck, Star } from "lucide-react";
-import { driveMedia } from "@/lib/site-data";
+import { media } from "@/lib/media";
 
-const heroImg = driveMedia.hero;
+const heroImg = media.hero;
 
 export function Hero() {
   return (

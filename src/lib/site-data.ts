@@ -38,16 +38,3 @@ export const driveThumb = (id: string, size = 1200) =>
 
 export const drivePreview = (id: string) =>
   `https://drive.google.com/file/d/${id}/preview`;
-
-// Real client media (frames captured from the connected Google Drive folder).
-const id = (i: number) => driveVideos[i].id;
-
-export const driveMedia = {
-  hero: driveThumb(id(6), 1600),
-  project1: driveThumb(id(1), 1600),
-  project2: driveThumb(id(5), 1600),
-  workshop: driveThumb(id(4), 1200),
-  detail: driveThumb(id(3), 1000),
-  bathroom: driveThumb(id(2), 1200),
-  stairs: driveThumb(id(7), 1200),
-};

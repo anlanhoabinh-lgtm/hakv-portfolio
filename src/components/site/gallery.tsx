@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { X, Expand } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
-import { driveThumb, driveVideos } from "@/lib/site-data";
+import { frames } from "@/lib/media";
 
 type Item = { src: string; alt: string; span?: string };
 
-const g = (i: number, size = 1200) => driveThumb(driveVideos[i].id, size);
+const g = (i: number) => frames[i];
 
 // Real project photography captured from the client's own site footage.
 const items: Item[] = [
-  { src: g(1, 1600), alt: "Bay window in dark aluminum with tempered glazing", span: "md:col-span-2 md:row-span-2" },
+  { src: g(1), alt: "Bay window in dark aluminum with tempered glazing", span: "md:col-span-2 md:row-span-2" },
   { src: g(6), alt: "Large glazed panels prepared for installation" },
   { src: g(4), alt: "Fabricated aluminum window frames ready for delivery" },
   { src: g(3), alt: "Frameless glass entrance doors in a finished lobby" },
   { src: g(2), alt: "Bathroom mirror and glass fit-out detail", span: "md:row-span-2" },
-  { src: g(7, 1600), alt: "Stainless and glass staircase balustrade", span: "md:col-span-2" },
+  { src: g(7), alt: "Stainless and glass staircase balustrade", span: "md:col-span-2" },
   { src: g(5), alt: "Commercial building under construction awaiting glazing" },
   { src: g(0), alt: "HAKV site team on a residential installation" },
 ];
