@@ -1,31 +1,22 @@
 import { useState } from "react";
 import { X, Expand } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
-import { driveThumb, driveVideos } from "@/lib/site-data";
-import office from "@/assets/office.jpg";
-import shower from "@/assets/shower.jpg";
-import detail from "@/assets/detail.jpg";
-import workshop from "@/assets/workshop.jpg";
-import p1 from "@/assets/project1.jpg";
-import p2 from "@/assets/project2.jpg";
-import hero from "@/assets/hero.jpg";
+import { frames } from "@/lib/media";
 
 type Item = { src: string; alt: string; span?: string };
 
-// Blend Drive video thumbnails (real project footage) with our generated hero shots.
+const g = (i: number) => frames[i];
+
+// Real project photography captured from the client's own site footage.
 const items: Item[] = [
-  { src: p1, alt: "Coastal residence aluminum windows and glass balconies", span: "md:col-span-2 md:row-span-2" },
-  { src: driveThumb(driveVideos[0].id), alt: "On-site installation walkthrough" },
-  { src: office, alt: "Corporate office glass partitioning" },
-  { src: driveThumb(driveVideos[1].id), alt: "Curtain wall installation in progress" },
-  { src: shower, alt: "Frameless shower glass enclosure", span: "md:row-span-2" },
-  { src: p2, alt: "Commercial curtain wall facade at golden hour", span: "md:col-span-2" },
-  { src: driveThumb(driveVideos[2].id), alt: "Aluminum fabrication workshop" },
-  { src: detail, alt: "Aluminum window profile detail" },
-  { src: driveThumb(driveVideos[3].id), alt: "Frameless glass fit-out" },
-  { src: workshop, alt: "Precision aluminum cutting" },
-  { src: driveThumb(driveVideos[4].id), alt: "Office partitioning delivery" },
-  { src: hero, alt: "Signature curtain wall facade at blue hour", span: "md:col-span-2" },
+  { src: g(1), alt: "Bay window in dark aluminum with tempered glazing", span: "md:col-span-2 md:row-span-2" },
+  { src: g(6), alt: "Large glazed panels prepared for installation" },
+  { src: g(4), alt: "Fabricated aluminum window frames ready for delivery" },
+  { src: g(3), alt: "Frameless glass entrance doors in a finished lobby" },
+  { src: g(2), alt: "Bathroom mirror and glass fit-out detail", span: "md:row-span-2" },
+  { src: g(7), alt: "Stainless and glass staircase balustrade", span: "md:col-span-2" },
+  { src: g(5), alt: "Commercial building under construction awaiting glazing" },
+  { src: g(0), alt: "HAKV site team on a residential installation" },
 ];
 
 export function Gallery() {

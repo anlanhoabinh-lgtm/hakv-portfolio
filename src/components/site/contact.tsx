@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Mail, MapPin, Phone, Send, Check } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 import { site } from "@/lib/site-data";
+import { WhatsAppIcon } from "@/components/site/whatsapp-icon";
+import { whatsappHref } from "@/components/site/whatsapp-fab";
 
 export function Contact() {
   const r = useReveal<HTMLDivElement>();
@@ -45,6 +47,17 @@ export function Contact() {
               ]}
             />
           </div>
+
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-3 rounded-full h-13 py-3.5 px-6 text-white font-semibold shadow-[0_12px_30px_-10px_rgba(37,211,102,0.7)] hover:brightness-105 transition"
+            style={{ backgroundColor: "#25D366" }}
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Chat on WhatsApp
+          </a>
 
           <div className="mt-8 rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-elev-sm)] aspect-[16/10]">
             <iframe

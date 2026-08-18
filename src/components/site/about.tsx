@@ -1,7 +1,9 @@
 import { Award, Building2, HardHat, ShieldCheck } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
-import workshop from "@/assets/workshop.jpg";
-import detail from "@/assets/detail.jpg";
+import { media } from "@/lib/media";
+
+const workshop = media.workshop;
+const detail = media.detail;
 
 export function About() {
   const a = useReveal<HTMLDivElement>();
@@ -56,7 +58,7 @@ export function About() {
             <div className="col-span-3 row-span-4 relative rounded-2xl overflow-hidden shadow-[var(--shadow-elev-lg)]">
               <img
                 src={workshop}
-                alt="Aluminum fabrication workshop with precision cutting"
+                alt="Fabricated aluminum window frames ready for delivery"
                 width={1600}
                 height={1067}
                 loading="lazy"
@@ -66,7 +68,7 @@ export function About() {
             <div className="col-span-2 row-span-3 col-start-4 row-start-1 relative rounded-2xl overflow-hidden shadow-[var(--shadow-elev-md)]">
               <img
                 src={detail}
-                alt="Close-up of aluminum window profile and glazing"
+                alt="Frameless glass entrance doors in a finished lobby"
                 width={1200}
                 height={1500}
                 loading="lazy"

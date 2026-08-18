@@ -1,12 +1,14 @@
 import { useReveal } from "@/hooks/use-reveal";
 import { CheckCircle2, MapPin, Calendar } from "lucide-react";
-import p1 from "@/assets/project1.jpg";
-import p2 from "@/assets/project2.jpg";
+import { media } from "@/lib/media";
+
+const p1 = media.project1;
+const p2 = media.project2;
 
 const projects = [
   {
     image: p1,
-    alt: "Modern residential building with aluminum windows and glass balconies",
+    alt: "Aluminum bay window with tempered glazing on a completed residence",
     title: "Coastal Residence — Aluminum & Glass Envelope",
     location: "Egbin, Ikorodu",
     year: "2025",
@@ -28,7 +30,7 @@ const projects = [
   },
   {
     image: p2,
-    alt: "Commercial curtain wall glass facade at golden hour",
+    alt: "Commercial development on site prior to curtain wall glazing",
     title: "Commercial Facade — Structural Curtain Wall",
     location: "Gada, Abia State",
     year: "2025",
