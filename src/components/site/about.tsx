@@ -1,7 +1,9 @@
 import { Award, Building2, HardHat, ShieldCheck } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
-import workshop from "@/assets/workshop.jpg";
-import detail from "@/assets/detail.jpg";
+import { driveMedia } from "@/lib/site-data";
+
+const workshop = driveMedia.workshop;
+const detail = driveMedia.detail;
 
 export function About() {
   const a = useReveal<HTMLDivElement>();

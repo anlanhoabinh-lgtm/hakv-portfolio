@@ -1,16 +1,16 @@
 import { ArrowRight, PlayCircle, ShieldCheck, Star } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
+import { driveMedia } from "@/lib/site-data";
+
+const heroImg = driveMedia.hero;
 
 export function Hero() {
   return (
     <section id="top" className="relative min-h-[100svh] w-full overflow-hidden text-white">
       <img
         src={heroImg}
-        alt="Modern glass curtain wall facade with aluminum framing at dusk"
-        width={1920}
-        height={1280}
+        alt="HAKV glazing panels prepared on site in Nigeria"
         fetchPriority="high"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div
         className="absolute inset-0"
