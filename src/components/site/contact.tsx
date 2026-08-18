@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Mail, MapPin, Phone, Send, Check } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 import { site } from "@/lib/site-data";
+import { WhatsAppIcon } from "@/components/site/whatsapp-icon";
+import { whatsappHref } from "@/components/site/whatsapp-fab";
 
 export function Contact() {
   const r = useReveal<HTMLDivElement>();
